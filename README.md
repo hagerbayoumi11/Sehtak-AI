@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a2540,50:1565c0,100:42a5f5&height=120&section=header" />
+</p>
+
 <table align="center">
 <tr>
 <td align="right" width="150">
