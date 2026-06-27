@@ -1,10 +1,14 @@
-<p align="center">
-  <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/logo.png" width="100" alt="Sehtak AI logo" />
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a2540,50:1565c0,100:42a5f5&height=210&section=header&text=Sehtak%20AI&fontSize=72&fontColor=ffffff&fontAlignY=42&desc=AI-Assisted%20Lung%20Cancer%20Screening%20Platform&descAlignY=66&descColor=e3f2fd&descSize=20" />
-</p>
+<table align="center">
+<tr>
+<td align="right" width="150">
+  <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/logo.png" width="120" alt="Sehtak AI logo" />
+</td>
+<td align="left">
+  <h1>&nbsp;Sehtak AI</h1>
+  <h4>&nbsp;AI-Assisted Lung Cancer Screening Platform</h4>
+</td>
+</tr>
+</table>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
