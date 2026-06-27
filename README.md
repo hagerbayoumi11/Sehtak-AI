@@ -49,13 +49,13 @@ Sehtak AI is organized around one object — a **scan** — that flows between t
 
 ```mermaid
 flowchart LR
-    P["PATIENT<br/>uploads a CT scan"] --> AI
-    H["HOSPITAL<br/>uploads a scan on<br/>behalf of a patient"] --> AI
-    AI["AI ENGINE<br/>CLAHE - CNN Ensemble - Grad-CAM"] --> REP["SCAN REPORT<br/>class - confidence<br/>risk - heatmap"]
-    REP --> D["DOCTOR<br/>reviews the case"]
-    D --> RES["MEDICAL RESPONSE"]
-    RES --> VIEW["PATIENT<br/>views AI analysis +<br/>doctor's decision"]
-    REP --> VIEW
+    P[Patient uploads CT scan] --> AI[AI Engine]
+    H[Hospital uploads scan] --> AI
+    AI --> REP[Scan Report]
+    REP --> D[Doctor reviews case]
+    D --> RES[Medical Response]
+    RES --> V[Patient views result]
+    REP --> V
 ```
 
 **Lifecycle of a scan**
@@ -73,23 +73,10 @@ flowchart LR
 
 A patient signs in, completes a short medical history, uploads a scan, receives an explainable AI analysis, requests a doctor's opinion, and manages appointments.
 
-<table>
-  <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/splash.png" width="230" /><br/><sub>1. App Launch</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/login.png" width="230" /><br/><sub>2. Role-Based Login</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/medical-history.png" width="230" /><br/><sub>3. Medical History Setup</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/patient-dashboard.png" width="230" /><br/><sub>4. Patient Dashboard</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/upload-report.png" width="230" /><br/><sub>5. Upload Scan</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/ai-result.png" width="230" /><br/><sub>6. AI Lung Analysis + Grad-CAM</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/select-doctor.png" width="230" /><br/><sub>7. Request Doctor Review</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-response.png" width="230" /><br/><sub>8. Doctor's Response</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/appointments.png" width="230" /><br/><sub>9. Appointments</sub></td>
-  </tr>
-</table>
+| <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/splash.png" width="230"><br>1. App Launch | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/login.png" width="230"><br>2. Role-Based Login | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/medical-history.png" width="230"><br>3. Medical History |
+|:---:|:---:|:---:|
+| <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/patient-dashboard.png" width="230"><br>4. Patient Dashboard | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/upload-report.png" width="230"><br>5. Upload Scan | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/ai-result.png" width="230"><br>6. AI Lung Analysis + Grad-CAM |
+| <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/select-doctor.png" width="230"><br>7. Request Doctor Review | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-response.png" width="230"><br>8. Doctor's Response | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/appointments.png" width="230"><br>9. Appointments |
 
 The **AI Lung Analysis** screen is the heart of the patient experience — it returns the predicted class, a confidence score, a colour-coded risk level, a Grad-CAM overlay, and clinical recommendations, all under a clear "AI decision-support only" notice.
 
@@ -99,18 +86,9 @@ The **AI Lung Analysis** screen is the heart of the patient experience — it re
 
 The doctor signs in, sees prioritized pending cases, reviews each scan together with the AI summary and the patient's medical history, then submits a professional medical response.
 
-<table>
-  <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-login.png" width="230" /><br/><sub>1. Doctor Login</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-dashboard.png" width="230" /><br/><sub>2. Doctor Dashboard</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-pending-cases.png" width="230" /><br/><sub>3. Pending Cases</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-case-details.png" width="230" /><br/><sub>4. Case Details + AI Summary</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-response2.png" width="230" /><br/><sub>5. Write Medical Response</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-profile.png" width="230" /><br/><sub>6. Verified Doctor Profile</sub></td>
-  </tr>
-</table>
+| <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-login.png" width="230"><br>1. Doctor Login | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-dashboard.png" width="230"><br>2. Doctor Dashboard | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-pending-cases.png" width="230"><br>3. Pending Cases |
+|:---:|:---:|:---:|
+| <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-case-details.png" width="230"><br>4. Case Details + AI Summary | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-response2.png" width="230"><br>5. Write Medical Response | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-profile.png" width="230"><br>6. Verified Doctor Profile |
 
 Each case shows the **Grad-CAM overlay**, the AI's predicted class and confidence, the patient's notes, and their medical, family, and allergy history — giving the doctor full context before deciding.
 
@@ -120,18 +98,9 @@ Each case shows the **Grad-CAM overlay**, the AI's predicted class and confidenc
 
 The hospital signs in, uploads scans for patients whose imaging is held on their side, sends them to the AI, assigns doctors to pending scans, and tracks every report end-to-end.
 
-<table>
-  <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-login.png" width="230" /><br/><sub>1. Hospital Login</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-dashboard.png" width="230" /><br/><sub>2. Hospital Dashboard</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-upload-scan.png" width="230" /><br/><sub>3. Upload Scan for Patient</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-reports-status.png" width="230" /><br/><sub>4. Reports Status + Assign Doctors</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-bookings.png" width="230" /><br/><sub>5. Bookings Management</sub></td>
-    <td align="center"></td>
-  </tr>
-</table>
+| <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-login.png" width="230"><br>1. Hospital Login | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-dashboard.png" width="230"><br>2. Hospital Dashboard | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-upload-scan.png" width="230"><br>3. Upload Scan for Patient |
+|:---:|:---:|:---:|
+| <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-reports-status.png" width="230"><br>4. Reports Status + Assign Doctors | <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-bookings.png" width="230"><br>5. Bookings Management | |
 
 ---
 
