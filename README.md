@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a2540,50:1565c0,100:42a5f5&height=230&section=header&text=Sehtak%20AI&fontSize=70&fontColor=ffffff&fontAlignY=42&desc=AI-Assisted%20Lung%20Cancer%20Screening%20Platform&descAlignY=64&descColor=e3f2fd&descSize=20&logo=https%3A%2F%2Fgithub.com%2Fhagerbayoumi11%2FSehtak-AI%2Fraw%2Fmain%2Flogo.png&logoWidth=70" />
+  <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/logo.png" width="100" alt="Sehtak AI logo" />
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a2540,50:1565c0,100:42a5f5&height=210&section=header&text=Sehtak%20AI&fontSize=72&fontColor=ffffff&fontAlignY=42&desc=AI-Assisted%20Lung%20Cancer%20Screening%20Platform&descAlignY=66&descColor=e3f2fd&descSize=20" />
 </p>
 
 <p align="center">
@@ -25,7 +29,7 @@
 
 **Sehtak AI** is a full-stack medical platform that brings artificial intelligence into the lung cancer screening workflow. It connects the three people involved in a diagnosis — the **Patient**, the **Doctor**, and the **Hospital** — around a single chest CT scan.
 
-A scan enters the system, a deep-learning model classifies it across four lung categories, a **Grad-CAM** heatmap shows exactly which region drove the decision, and the case is routed to a licensed doctor for the final medical response. Every step is transparent: the patient sees the AI analysis and the doctor's decision in one place.
+A scan enters the system, a deep-learning model classifies it across four lung categories, a **Grad-CAM** heatmap shows exactly which region drove the decision, and the case is routed to a licensed doctor for the final medical response.
 
 > The model is built to **support** the physician, not replace them. The final diagnosis always belongs to a licensed doctor.
 
@@ -59,18 +63,23 @@ flowchart LR
 
 ## The Patient
 
-Patients upload a scan, receive an explainable AI analysis in seconds, request a doctor's opinion, and manage their appointments.
+A patient signs in, completes a short medical history, uploads a scan, receives an explainable AI analysis, requests a doctor's opinion, and manages appointments.
 
 <table>
   <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/patient-dashboard.png" width="230" /><br/><sub>Patient Dashboard</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/upload-report.png" width="230" /><br/><sub>Upload Scan</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/ai-result.png" width="230" /><br/><sub>AI Lung Analysis + Grad-CAM</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/splash.png" width="230" /><br/><sub>1. App Launch</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/login.png" width="230" /><br/><sub>2. Role-Based Login</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/medical-history.png" width="230" /><br/><sub>3. Medical History Setup</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/select-doctor.png" width="230" /><br/><sub>Request Doctor Review</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-response.png" width="230" /><br/><sub>Doctor's Response</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/appointments.png" width="230" /><br/><sub>Appointments</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/patient-dashboard.png" width="230" /><br/><sub>4. Patient Dashboard</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/upload-report.png" width="230" /><br/><sub>5. Upload Scan</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/ai-result.png" width="230" /><br/><sub>6. AI Lung Analysis + Grad-CAM</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/select-doctor.png" width="230" /><br/><sub>7. Request Doctor Review</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-response.png" width="230" /><br/><sub>8. Doctor's Response</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/appointments.png" width="230" /><br/><sub>9. Appointments</sub></td>
   </tr>
 </table>
 
@@ -80,18 +89,18 @@ The **AI Lung Analysis** screen is the heart of the patient experience — it re
 
 ## The Doctor
 
-Doctors receive prioritized cases, review the scan together with the AI summary and the patient's medical history, then submit their professional decision.
+The doctor signs in, sees prioritized pending cases, reviews each scan together with the AI summary and the patient's medical history, then submits a professional medical response.
 
 <table>
   <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-dashboard.png" width="230" /><br/><sub>Doctor Dashboard</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-pending-cases.png" width="230" /><br/><sub>Pending Cases</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-case-details.png" width="230" /><br/><sub>Case Details + AI Summary</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-login.png" width="230" /><br/><sub>1. Doctor Login</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-dashboard.png" width="230" /><br/><sub>2. Doctor Dashboard</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-pending-cases.png" width="230" /><br/><sub>3. Pending Cases</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-response2.png" width="230" /><br/><sub>Write Medical Response</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-profile.png" width="230" /><br/><sub>Verified Doctor Profile</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-login.png" width="230" /><br/><sub>Role-Based Login</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-case-details.png" width="230" /><br/><sub>4. Case Details + AI Summary</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-response2.png" width="230" /><br/><sub>5. Write Medical Response</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/doctor-profile.png" width="230" /><br/><sub>6. Verified Doctor Profile</sub></td>
   </tr>
 </table>
 
@@ -101,18 +110,18 @@ Each case shows the **Grad-CAM overlay**, the AI's predicted class and confidenc
 
 ## The Hospital
 
-Hospitals upload scans for patients whose imaging is held on their side, send them to the AI, assign doctors to pending scans, and track every report end-to-end.
+The hospital signs in, uploads scans for patients whose imaging is held on their side, sends them to the AI, assigns doctors to pending scans, and tracks every report end-to-end.
 
 <table>
   <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-dashboard.png" width="230" /><br/><sub>Hospital Dashboard</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-upload-scan.png" width="230" /><br/><sub>Upload Scan for Patient</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-reports-status.png" width="230" /><br/><sub>Reports Status + Assign Doctors</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-login.png" width="230" /><br/><sub>1. Hospital Login</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-dashboard.png" width="230" /><br/><sub>2. Hospital Dashboard</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-upload-scan.png" width="230" /><br/><sub>3. Upload Scan for Patient</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-bookings.png" width="230" /><br/><sub>Bookings Management</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-login.png" width="230" /><br/><sub>Hospital Login</sub></td>
-    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/splash.png" width="230" /><br/><sub>Sehtak AI</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-reports-status.png" width="230" /><br/><sub>4. Reports Status + Assign Doctors</sub></td>
+    <td align="center"><img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/hospital-bookings.png" width="230" /><br/><sub>5. Bookings Management</sub></td>
+    <td align="center"></td>
   </tr>
 </table>
 
