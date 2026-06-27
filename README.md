@@ -1,9 +1,5 @@
 <p align="center">
-  <img src="https://github.com/hagerbayoumi11/Sehtak-AI/raw/main/logo.png" width="110" alt="Sehtak AI logo" />
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a2540,50:0e6e8c,100:14b8a6&height=200&section=header&text=Sehtak%20AI&fontSize=68&fontColor=ffffff&fontAlignY=40&desc=AI-Assisted%20Lung%20Cancer%20Screening%20Platform&descAlignY=62&descColor=d8f3f0&descSize=20" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a2540,50:1565c0,100:42a5f5&height=230&section=header&text=Sehtak%20AI&fontSize=70&fontColor=ffffff&fontAlignY=42&desc=AI-Assisted%20Lung%20Cancer%20Screening%20Platform&descAlignY=64&descColor=e3f2fd&descSize=20&logo=https%3A%2F%2Fgithub.com%2Fhagerbayoumi11%2FSehtak-AI%2Fraw%2Fmain%2Flogo.png&logoWidth=70" />
 </p>
 
 <p align="center">
@@ -18,8 +14,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Full--Stack-0a2540?style=flat-square" />
-  <img src="https://img.shields.io/badge/Roles-Patient%20%C2%B7%20Doctor%20%C2%B7%20Hospital-0e6e8c?style=flat-square" />
-  <img src="https://img.shields.io/badge/AI-Lung%20CT%20Classification-14b8a6?style=flat-square" />
+  <img src="https://img.shields.io/badge/Roles-Patient%20%C2%B7%20Doctor%20%C2%B7%20Hospital-1565c0?style=flat-square" />
+  <img src="https://img.shields.io/badge/AI-Lung%20CT%20Classification-42a5f5?style=flat-square" />
   <img src="https://img.shields.io/badge/Explainability-Grad--CAM-0a2540?style=flat-square" />
 </p>
 
@@ -165,5 +161,5 @@ Sehtak AI was developed for **academic and research purposes**. It is **not a me
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14b8a6,50:0e6e8c,100:0a2540&height=120&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:42a5f5,50:1565c0,100:0a2540&height=120&section=footer" />
 </p>
